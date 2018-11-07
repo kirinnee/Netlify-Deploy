@@ -8,7 +8,7 @@ let core: Core = new Kore();
 core.ExtendPrimitives();
 
 program
-	.version("0.0.1")
+	.version("0.0.2")
 	.description("Simple command line to deploy to netlify");
 
 program
