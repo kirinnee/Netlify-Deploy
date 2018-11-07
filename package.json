@@ -1,6 +1,6 @@
 {
   "name": "netlify-deploy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple command line to deploy to netlify",
   "main": "dist/netdeploy.js",
   "license": "MIT",
@@ -10,7 +10,7 @@
   },
   "types": "./types/netdeploy.d.ts",
   "bin": {
-	  "netdeploy": "dist/netdeploy.js"
+    "netdeploy": "dist/netdeploy.js"
   },
   "repository": {
     "type": "git",
@@ -26,20 +26,20 @@
     "start": "node dist/netdeploy"
   },
   "dependencies": {
-	  "@kirinnee/core": "^0.6.4",
-	  "chalk":          "^2.4.1",
-	  "commander":      "^2.19.0"
+    "@kirinnee/core": "^0.6.4",
+    "chalk": "^2.4.1",
+    "commander": "^2.19.0"
   },
   "devDependencies": {
-	  "@types/chalk":        "^2.2.0",
-	  "@types/node":         "^10.12.0",
-	  "@types/webpack":      "^4.4.17",
-	  "rimraf":              "^2.6.2",
+    "@types/chalk": "^2.2.0",
+    "@types/node": "^10.12.0",
+    "@types/webpack": "^4.4.17",
+    "rimraf": "^2.6.2",
     "terser-webpack-plugin": "^1.1.0",
-	  "ts-loader":           "^5.2.2",
-	  "ts-node":             "^7.0.1",
-	  "typescript":          "^3.1.3",
-	  "webpack":             "^4.20.2",
-	  "webpack-cli":         "^3.1.2"
+    "ts-loader": "^5.2.2",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.3",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
   }
 }
