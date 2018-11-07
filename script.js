@@ -1,5 +1,4 @@
 let spawn = require('child_process').spawn;
-let fs = require("fs");
 
 //command will be the first argument
 let command = process.argv[2];
@@ -22,7 +21,7 @@ async function Execute(command, args, watch) {
             await run("node script wp dist");
             break;
         case "publish":
-            await run(`npm run build`);
+            await run(`npm run deploy`);
             await run(`git add .`); 
             await run(`git commit -m "Preparing for next ${args[0]} version`); 
             await run(`npm version ${args[0]}`);

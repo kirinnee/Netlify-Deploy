@@ -1,8 +1,7 @@
 import * as path from "path";
 import {opti} from "./webpack.optimizer";
-import webpack from "webpack";
+import webpack, {Entry} from "webpack";
 import {rules} from "./webpack.rules";
-import {Entry} from "webpack";
 import {Kore} from "@kirinnee/core";
 
 let core = new Kore();
@@ -17,6 +16,7 @@ function GenerateConfig(entry: Entry, filename: string, mode: "development"|"pro
     let outDir = path.resolve(__dirname,  "../dist");
     let config : webpack.Configuration = {
         entry: entry,
+	    plugins: [new webpack.BannerPlugin({banner: "#!/usr/bin/env node", raw: true})],
         output: {
             path: outDir,
             filename: filename,
